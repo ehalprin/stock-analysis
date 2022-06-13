@@ -16,6 +16,19 @@ Starting Price and Ending price were determined via code that identified when th
 
 ![2017 Results](https://github.com/ehalprin/stock-analysis/blob/main/2017%20Stock%20Values.png)) ![2018 Results](https://github.com/ehalprin/stock-analysis/blob/main/2018%20Stock%20Values.png)
 
+DQ stock performed well in 2017, with a 199.45% return. However, in 2018, DQ's return was -62.6%. ENPH and RUN were the only two stocks with positive returns in both 2017 and 2018, so those would make good additions to Steve's parents' stock portfolio. 
+
+I then refactored the VBA code, so that it would run more efficiently if Steve wanted to analyze even more data. Instead of having two "for" loops with different variables, I used a new variable, "tickerIndex." This served as an index to four arrays: the array of tickers, and then three new arrays that I created for each ticker's volume, starting price, and ending price.
+
+The tickerIndex started as 0, and, as each loop was completed, increased by one to move to the next ticker. The volumes of each ticker were added to the new tickerVolume array, matching the index of the ticker within the tickers array.
+
+![Refactored Code](https://github.com/ehalprin/stock-analysis/blob/main/Refactored%20Code.png)
+
+Because the code did not have nested for loops, the analysis ran more quickly and efficiently. Instead of running in 0.2 seconds, the analysis ran less than 0.1 seconds:
+
+![VBA Challenge 2017](https://github.com/ehalprin/stock-analysis/blob/main/VBA_Challenge_2017.png)
+
+![VBA Challenge 2018](https://github.com/ehalprin/stock-analysis/blob/main/VBA_Challenge_2018.png)
 
 
 ## Summary
