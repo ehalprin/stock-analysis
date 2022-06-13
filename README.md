@@ -6,7 +6,7 @@ This project was initiated by a request from Steve, whose parents are interested
 
 ## Results
 
-Full analysis of this stock data is available for download at [this link](https://github.com/ehalprin/stock-analysis/blob/main/green_stocks.xlsm).
+Full analysis of this stock data is available for download at [this link](https://github.com/ehalprin/stock-analysis/blob/main/VBA_Challenge.xlsm).
 
 ### Process of Initial Analysis
 
