@@ -8,15 +8,23 @@ This project was initiated by a request from Steve, whose parents are interested
 
 Full analysis of this stock data is available for download at [this link](https://github.com/ehalprin/stock-analysis/blob/main/green_stocks.xlsm).
 
+### Process of Initial Analysis
+
 Using VBA, I wrote a code to analyze twelve different stocks. I created a prompt for the user to enter what year they wanted to analyze. I created an array of all the tickers, and then created two different "for" loops to loop through the tickers and then all the rows, collecting information on volume, starting price, and ending price in the process. 
 
 ![Initial Analysis Code](https://github.com/ehalprin/stock-analysis/blob/main/Initial%202%20Loop%20Code.png))
 
-Starting Price and Ending price were determined via code that identified when the current row was the first or last time a ticker appeared. From those two values, the yearly return could be determined. I then added conditional formatting to make it clear how each stock was performing. Here are the results:
+Starting Price and Ending price were determined via code that identified when the current row was the first or last time a ticker appeared. From those two values, the yearly return could be determined. I then added conditional formatting to make it clear how each stock was performing. 
+
+### Results of Initial Analysis
+
+Here are the results:
 
 ![2017 Results](https://github.com/ehalprin/stock-analysis/blob/main/2017%20Stock%20Values.png)) ![2018 Results](https://github.com/ehalprin/stock-analysis/blob/main/2018%20Stock%20Values.png)
 
 DQ stock performed well in 2017, with a 199.45% return. However, in 2018, DQ's return was -62.6%. ENPH and RUN were the only two stocks with positive returns in both 2017 and 2018, so those would make good additions to Steve's parents' stock portfolio. 
+
+### Refactoring the Code
 
 I then refactored the VBA code, so that it would run more efficiently if Steve wanted to analyze even more data. Instead of having two "for" loops with different variables, I used a new variable, "tickerIndex." This served as an index to four arrays: the array of tickers, and then three new arrays that I created for each ticker's volume, starting price, and ending price.
 
@@ -30,5 +38,12 @@ Because the code did not have nested for loops, the analysis ran more quickly an
 
 ![VBA Challenge 2018](https://github.com/ehalprin/stock-analysis/blob/main/VBA_Challenge_2018.png)
 
-
 ## Summary
+
+### Advantages and Disadvantages of Refactoring Code
+
+Refactoring code obviously increases the speed at which it is processed. It removes unnecessary steps and streamlines the logic of the code. For extremely large data sets, increased speed and efficiency is key. One key disadvantage is that the process of refactoring could lead to mistakes or errors, adding problems to code that is already working. 
+
+### Refactoring this VBA Code
+
+The refactored VBA code in this case worked much faster than the original, making it more useful in the future for processing even larger data sets. However, the process of refactoring was difficult; I had to make several attempts to understand theoretically what changes needed to be made, and then actually implement those changes. The first few refactored drafts led to erroneous data or code that simply wouldn't run. However, ultimately it was worth the extra effort to create code that was more efficient and effective. 
