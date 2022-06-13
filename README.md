@@ -46,4 +46,6 @@ Refactoring code obviously increases the speed at which it is processed. It remo
 
 ### Refactoring this VBA Code
 
-The refactored VBA code in this case worked much faster than the original, making it more useful in the future for processing even larger data sets. However, the process of refactoring was difficult; I had to make several attempts to understand theoretically what changes needed to be made, and then actually implement those changes. The first few refactored drafts led to erroneous data or code that simply wouldn't run. However, ultimately it was worth the extra effort to create code that was more efficient and effective. 
+The refactored VBA code in this case worked much faster than the original, making it more useful in the future for processing even larger data sets. This seems to be largely due to having only one, rather than two nested, "for" loops. 
+
+However, the process of refactoring was difficult; I had to make several attempts to understand theoretically what changes needed to be made, and then actually implement those changes. The first few refactored drafts led to erroneous data or code that simply wouldn't run as I tried to make the tickerIndex variable correspond correctly to the various arrays. However, ultimately it was worth the extra effort to create code that was more efficient and effective. 
