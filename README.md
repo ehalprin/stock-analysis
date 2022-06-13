@@ -8,4 +8,6 @@ This project was initiated by a request from Steve, whose parents are interested
 
 Full analysis of this stock data is available for download at [this link](https://github.com/ehalprin/stock-analysis/blob/main/green_stocks.xlsm).
 
+Using VBA, I wrote a code to analyze twelve different stocks. I created an array of all the tickers, and then created two different "for" loops to loop through the tickers and then all the rows, collecting information on volume, starting price, and ending price in the process. 
+
 ## Summary
